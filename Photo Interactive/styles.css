@@ -64,42 +64,30 @@ body {
     outline: 3px solid purple;
 }
 
-@media (max-width: 1170px) {
-    .gallery {
-        width: 1170px;
-        height: auto;
-        top: 1490px;
-        left: -355px;
-        gap: 0px;
-        opacity: 1; 
-        display: flex;
-        flex-wrap: nowrap; 
-        justify-content: flex-start;
-        overflow-x: auto;
-    }
-
-    .photo-frame {
-        width: 98.5px;
-        height: 600px;
-        gap: 0px;
-        opacity: 1;
-        position: relative;
-        
-    }
-
-    .photo-frame img {
-        width: auto;
-        height: 100%;
-        object-fit: none; 
-        position: absolute; 
-        left: 50%; 
-        transform: translateX(-50%);
-    }
-    .photo-frame:hover img {
-        outline: 3px solid purple;
-    }
+/*RESPONSIVENESS*/
+@media (max-width: 1024px) {
+.gallery {
+    width: 90vw;
+    height: auto;
+    justify-content: flex-start;
+}
+.photo-frame {
+    width: 23vw;
+    height: auto;
+}
 }
 
+@media (max-width: 768px) {
+.gallery {
+    width: 90vw;
+    height: auto;
+    justify-content: flex-start;
+}
+.photo-frame {
+    width: 46vw;
+    height: auto;
+}
+}
 
 @media (max-width: 400px) {
     .gallery {
