@@ -25,4 +25,4 @@ function handleInput(input) {
     rl.close();
 }
 
-rl.question('Enter a string: ', handleInput);
+rl.question('Enter a string (word): ', handleInput);
