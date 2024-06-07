@@ -15,6 +15,7 @@ body {
     gap: 0px;
     width: 1178px;
     height: 588px;
+    max-width: 100%;
 }
 
 .photo-frame {
@@ -62,31 +63,41 @@ body {
     transform: scale(1.05);
     outline: 3px solid purple;
 }
-@media (max-width: 1178px) {
+
+@media (max-width: 1170px) {
     .gallery {
-        width: 100%; /* Adjust to fit your layout */
-        height: auto; /* Remove fixed height */
+        width: 1170px;
+        height: auto;
+        top: 1490px;
+        left: -355px;
+        gap: 0px;
+        opacity: 1; 
         display: flex;
+        flex-wrap: nowrap; 
+        justify-content: flex-start;
         overflow-x: auto;
     }
 
     .photo-frame {
-        flex: 0 0 auto; /* Allow flexibility in width */
-        width: calc(100% / 4); /* Initial width divided by number of images */
-        max-width: calc(100% / 4); /* Initial max-width divided by number of images */
-        transition: width 0.3s ease, max-width 0.3s ease; /* Add transition effect */
+        width: 98.5px;
+        height: 600px;
+        gap: 0px;
+        opacity: 1;
+        position: relative;
+        
     }
 
     .photo-frame img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        width: auto;
+        height: 100%;
+        object-fit: none; 
+        position: absolute; 
+        left: 50%; 
+        transform: translateX(-50%);
     }
-
     .photo-frame:hover img {
         outline: 3px solid purple;
     }
-    
 }
 
 
