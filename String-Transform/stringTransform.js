@@ -1,15 +1,28 @@
-def transform_string(s):
-    length = len(s)
-    
-    if length % 15 == 0:
-        return s[::-1]
-    elif length % 3 == 0:
-        return s[::-1]
-    elif length % 5 == 0:
-        return ' '.join(str(ord(c)) for c in s)
-    else:
-        return s
+const readline = require('readline');
 
-input_string = input("Enter a string: ")
-result = transform_string(input_string)
-print("Transformed string:", result)
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+function transformString(str) {
+    const length = str.length;
+
+    if (length % 15 === 0) {
+        return str.split('').reverse().join('').split('').map(char => char.charCodeAt(0)).join(' ');
+    } else if (length % 3 === 0) {
+        return str.split('').reverse().join('');
+    } else if (length % 5 === 0) {
+        return str.split('').map(char => char.charCodeAt(0)).join(' ');
+    } else {
+        return str;
+    }
+}
+
+function handleInput(input) {
+    const transformedString = transformString(input);
+    console.log('Transformed String:', transformedString);
+    rl.close();
+}
+
+rl.question('Enter a string: ', handleInput);
