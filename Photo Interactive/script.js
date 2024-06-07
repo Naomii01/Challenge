@@ -32,8 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
             header.style.display = 'block';
         });
     }
-
-    // Initially hide headers if screen width is less than or equal to 400px
     if (window.innerWidth <= 400) {
         hideHeaders();
     }

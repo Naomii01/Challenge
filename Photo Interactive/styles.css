@@ -62,6 +62,33 @@ body {
     transform: scale(1.05);
     outline: 3px solid purple;
 }
+@media (max-width: 1178px) {
+    .gallery {
+        width: 100%; /* Adjust to fit your layout */
+        height: auto; /* Remove fixed height */
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .photo-frame {
+        flex: 0 0 auto; /* Allow flexibility in width */
+        width: calc(100% / 4); /* Initial width divided by number of images */
+        max-width: calc(100% / 4); /* Initial max-width divided by number of images */
+        transition: width 0.3s ease, max-width 0.3s ease; /* Add transition effect */
+    }
+
+    .photo-frame img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .photo-frame:hover img {
+        outline: 3px solid purple;
+    }
+    
+}
+
 
 @media (max-width: 400px) {
     .gallery {
