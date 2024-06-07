@@ -20,7 +20,7 @@ function subarraySum(arr, target) {
     return false;
 }
 
-const input = prompt('Enter a list of numbers separated by commas (e.g., 4,2,7,1,9,5): ');
+const input = prompt('Enter a list of numbers separated by commas (e.g: "," 2,4,7,8,9,0,3): ');
 const target = parseInt(prompt('Enter the target sum: '), 10);
 
 const arr = input.split(',').map(Number);
