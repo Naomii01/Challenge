@@ -5,13 +5,19 @@ On **UI Challenge: Interactive Photo Gallery**
 
 This is a photo interactive challenge which has an hover effect with a purple outline. 
 Once in responsivness the photos squeeze together to become smaller until it reaches a max-width of 400px where the header and subheader dissapears.\
-Here is its deployment from netlify web link to see on** live** : https://naomi-photointeractive-challenge.netlify.app/
+Here is its deployment from netlify web link to see on **live** : https://naomi-photointeractive-challenge.netlify.app/
+
+**Step 1**: Open Visual Studio Code
+**Step 2**: Create a folder
+**Step 3**: Create a HTML , CSS and JavaScript File: files called index.html , styles.css and script.js respectively and copy the codes for each. **Note** make sure the spelling for each file is written correctly.
+**Step 4** : Select Click on index.html file to open live server to see the result livr visuals
+
 
 
 
 On  **Coding Challenge 1: Array Manipulation**
 
-**Step 1**: Your first need to install Node.js 
+**Step 1**: Your first need to install Node.js on your device 
 **Step 2**: Create a folder
 **Step 3**: Create a JavaScript File: Inside the folder, create a new file named arrayMap.js and copy the provided code into this file.
 **Step 4**: Install prompt-sync Package: Open your terminal or command prompt, navigate to the project folder, and run the following command to install the prompt-sync package: " npm i prompt-sync"
@@ -20,7 +26,7 @@ On  **Coding Challenge 1: Array Manipulation**
 **Step 7**:Target Sum: Next, you'll be prompted to enter the target sum of your choice. Enter the target sum and press Enter.
 **Step 8**:Result: The script will then calculate whether there exists a contiguous subarray within the input array that sums up to the target sum you provided. It will print either "True" or "False" depending on the result.
 
-**NOTE** all of this is done in the Terminal 
+**NOTE** all of this is done in the Terminal in Visual Studio Code
 
 
 
@@ -38,7 +44,7 @@ This command installs the readline-sync package and adds it as a dependency to y
 **Step 7**: Input: Enter your desired string (word) when prompted by the script and press Enter.
 **Step 8**:View Result: The script will transform the entered string based on the specified conditions and print the transformed string to the terminal. The program will then exit.
 
-**NOTE** all of this is done in the Terminal 
+**NOTE** all of this is done in the Terminal in Visual Studio Code
 
 
 
